@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'marielmr$em',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'localhost',
+        'HOST': 'marielmr.pythonanywhere.com',
         'PORT': '',
     }
 }
