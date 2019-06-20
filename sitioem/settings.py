@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'sitioem.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'em',
+        'NAME': 'marielmr$em',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
