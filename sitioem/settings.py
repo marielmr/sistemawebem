@@ -78,11 +78,14 @@ WSGI_APPLICATION = 'sitioem.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        #'NAME': 'em',
         'NAME': 'marielmr$em',
-        'USER': 'root',
+        #'USER': 'root',
+        'USER': 'marielmr',
         'PASSWORD': '',
-        'HOST': 'marielmr.pythonanywhere.com',
-        'PORT': '',
+        #'HOST': 'localhost',
+        'HOST': 'marielmr.mysql.pythonanywhere-services.com',
+        #'PORT': '',
     }
 }
 
