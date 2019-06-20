@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'marielmr$em',
         #'USER': 'root',
         'USER': 'marielmr',
-        'PASSWORD': '',
+        #'PASSWORD': '',
         #'HOST': 'localhost',
         'HOST': 'marielmr.mysql.pythonanywhere-services.com',
         #'PORT': '',
