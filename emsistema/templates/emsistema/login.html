@@ -1,20 +1,60 @@
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/emsistema.css' %}">
     </head>
     <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
+        <div class="page-header">
+            <h1><a href="/">Inicio de Sesión</a></h1>
         </div>
 
         {% for p in posts %}
 
-        <div>
+        <div class="post">
+            <p>id: {{p.idperson}}</p>
             <p>nombre: {{p.firstname}}</p>
             <p>apellido: {{p.lastname}}</p>
             <p>fecha de nacimiento: {{p.birthdate}}</p>
         </div>
 
         {% endfor %}
+
+
+
+        <h2>Login Form</h2>
+
+<form>
+  <div class="imgcontainer">
+    {% load static %}
+    <img src="{% static '../../media/images/userg.png'%}" alt="Avatar" class="avatar" width="50px" height="50px">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+
+
+
+
     </body>
 </html>

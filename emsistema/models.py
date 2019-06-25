@@ -12,6 +12,7 @@ class user(models.Model):
 	iduser=models.AutoField(primary_key=True)
 	user=models.CharField(max_length=20)
 	password=models.CharField(max_length=8)
+	img=models.URLField()
 	idperson=models.ForeignKey(person,on_delete=models.CASCADE)
 
 
